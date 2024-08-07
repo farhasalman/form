@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h2 align="center">SURVEY FORM</h2>
+    <form action="" enctype="multipart/form-data">
+        <fieldset>
+        <table  align="center" cellspacing="2" cellpadding="3" >
+            <tr>
+                <td colspan="2" align="center"><h4>Let us know how we can improve</h4></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="name">*Name:</label></td>
+                <td><input type="text" id="name" name="name" required><br></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="email">*Email:</label></td>
+                <td><input type="email" id="email" name="email" required><br></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="age">*Age:</label></td>
+                <td><input type="number" id="age" name="age" required><br><br></td>
+            </tr>
+            <tr>
+                <td><label for=""></label></td>
+                <td colspan="2" align="right"><input type="file" id="profile" name="profile"><br><br></td>
+            </tr>
+            <tr>
+                <td>Which option best describes your current role?</td>
+                <td>
+                    <select name="role" id="role">z
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                </td>
+            </tr><br><br>
+            <tr>
+                <td>How likely is it that you would recommend this<br> program to a friend?<br><br></td>
+                <td>
+                    <input type="radio" id="definitely" name="feedback" value="definitely">
+                    <label for="definitely">Definitely</label><br>
+                    <input type="radio" id="maybe" name="feedback" value="maybe">
+                    <label for="maybe">Maybe</label><br>
+                    <input type="radio" id="notSure" name="feedback" value="notSure">
+                    <label for="notSure">Not sure</label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>What did you like most?</td>
+                <td>
+                    <select name="likeMost" id="likeMost">
+                        <option disabled selected>Select an option</option>
+                        <option value="frontEnd">Front-End Project</option>
+                        <option value="backEnd">Back-End Project</option>
+                        <option value="dataVisualization">Data Visualization</option><br>
+                    </select><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Things that should be improved in the future<br> (Check all that apply)</td>
+                <td>
+                    <input type="checkbox" id="frontEnd" name="improve" value="frontEnd">
+                    <label for="frontEnd">Front-End Project</label><br>
+                    <input type="checkbox" id="backEnd" name="improve" value="backEnd">
+                    <label for="backEnd">Back-End Project</label><br>
+                    <input type="checkbox" id="dataVis" name="improve" value="dataVis">
+                    <label for="dataVis">Data Visualization</label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="suggestions">Any Comments or Suggestions?</label>
+                </td>
+                <td>
+                    <textarea name="comments" id="suggestions" cols="30" rows="3"></textarea><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="SUBMIT"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+
+</html>
